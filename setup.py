@@ -9,10 +9,10 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
     name="rwalang",
-    version='0.0.4',
+    version='0.0.5',
     description="A fast language detection package for Ikinyarwanda(Native language of Rwandans)",
     long_description=long_description,
-    py_modules=["rwalang"],
+    py_modules=["isKinyarwanda"],
     package_dir={'': 'rwalang'},
     keywords=["detect language",
               "rwanda",

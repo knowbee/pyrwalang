@@ -1,6 +1,6 @@
 # rwalang (detect ikinyarwanda)
-=======================
-.. image:: https://travis-ci.com/knowbee/pyrwalang.svg?branch=master
+=================================
+.. image:: https://travis-ci.com/knowbee/pyrwalang.svg?token=yN9jXnk59suszMqNsJJb&branch=master
     :target: https://travis-ci.com/knowbee/pyrwalang
 .. image:: https://badges.frapsoft.com/os/v1/open-source.svg?v=102
     :target: https://github.com/ellerbrock/open-source-badge/
