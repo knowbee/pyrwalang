@@ -2,11 +2,11 @@ from .data import (ikinyarwanda, ibihekane,ibyungo, patterns)
 import re
 def tokenize(word):
   tokens = []
-  tokens = re.compile("/\s|a|u|i|e|u|o|â|ê|î|ô|û|[0-9]|[-!$%^&*()_+|~=`\{\}\[\]:\";'<>?,.\/]/gm").split(word)
+  tokens = re.compile("\s|a|u|i|e|u|o|â|ê|î|ô|û|[0-9]|[-!$%^&*()_+|~=`\{\}\[\]:\";'<>?,.\/]").split(word)
   for token in patterns:
     if token in word:
       tokens.append(token)
-  return [token for token in tokens if token]
+  return [token.strip() for token in tokens if token.strip()]
 
 def detector(syllable):
   if syllable in ikinyarwanda : 
@@ -15,7 +15,7 @@ def detector(syllable):
 
 def isKinyarwanda(word):
   # print(ikinyarwanda)
-  consonants = tokenize(str(word))
+  consonants = tokenize(str(word.lower()))
   count = 0.0;
   total = 0.0;
   for consonant in consonants:
