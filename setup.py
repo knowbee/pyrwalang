@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-from setuptools import setup
+from setuptools import setup,find_packages
 from os import path
 here = path.abspath(path.dirname(__file__))
 
@@ -9,11 +9,11 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
     name="rwalang",
-    version='0.0.5',
+    version='0.0.1',
     description="A fast language detection package for Ikinyarwanda(Native language of Rwandans)",
     long_description=long_description,
-    py_modules=["isKinyarwanda"],
-    package_dir={'': 'rwalang'},
+    py_modules=["rwalang"],
+    packages = find_packages(),
     keywords=["detect language",
               "rwanda",
               "ikinyarwanda",
