@@ -1,7 +1,11 @@
 # rwalang (detect ikinyarwanda)
 =======================
-A fast language detection package for Ikinyarwanda(Native language of Rwandans)
+.. image:: https://travis-ci.com/knowbee/pyrwalang.svg?branch=master
+    :target: https://travis-ci.com/knowbee/pyrwalang
+.. image:: https://badges.frapsoft.com/os/v1/open-source.svg?v=102
+    :target: https://github.com/ellerbrock/open-source-badge/
 
+A fast language detection package for Ikinyarwanda(Native language of Rwandans)
 ⚠ Be aware that if a sentence has foreign language mixed with Ikinyarwanda rwalang returns `false`
 
 Installation
